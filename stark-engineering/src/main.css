@@ -1,5 +1,7 @@
-.App{
-  height: 100%
+body, body > #root > div {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 .parallax{
   background-image: url("stark-background.png");
@@ -38,16 +40,17 @@
 }
 
 .content{
-  padding: 16px;
+  padding: 30px;
+  height: 60vh
 }
 
-.sticky{
+#navbar .sticky{
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.sticky + .content{
+#navbar .sticky + .content{
   padding-top: 60px;
 }
 
@@ -60,10 +63,6 @@ p.heading1{
 
 p.paragraph{
   font-family: 'Montserrat', sans-serif;
-  padding-top: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 8%;
   font-size: 110%;
 }
 
@@ -75,17 +74,20 @@ p.paragraph{
 p.paragraph2{
   font-family: 'Montserrat', sans-serif;
   color: white;
-  padding-top: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 8%;
   font-size: 90%;
+  padding: 0;
+  margin: 0;
 }
+
 ul.paragraph{
   font-family: 'Montserrat', sans-serif;
   padding-left: 10%;
   padding-right: 10%;
   font-size: 110%;
+}
+
+ul {
+  list-style-type: none;
 }
 
 footer{
